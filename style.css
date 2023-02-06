@@ -1,4 +1,4 @@
-html {
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,19 @@ body {
     line-height: 1.6;
     height: auto;
     min-height: 100%;
+}
+
+.fix::before, .fix::after {
+    content: '';
+    display: table;
+}
+
+.color {
+    color: #ffffff;
+}
+
+.center {
+    text-align: center;
 }
 
 .section.image {
@@ -25,6 +38,61 @@ body {
 
 .section {
     position: relative;
+    min-height: 756px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("background.jpg");
     background-position: 50% 50%;
+}
+
+.sheet {
+    position: relative;
+    margin: 0 auto;
+}
+
+.text {
+    word-wrap: break-word;
+    position: relative;
+}
+
+.section .text {
+    margin-top: 193px;
+}
+
+.text__1 {
+    width: 867px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-size: 3.75rem;
+    margin: 267px auto 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 108px auto 0;
+}
+
+.repeater {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 0px
+}
+
+.list-item {
+    display: flex;
+    position: relative;
+}
+
+.container {
+    padding: 10px 20px;
+}
+
+.text__2 {
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.text__3 {
+    font-weight: 400;
+    font-style: italic;
+    margin: 20px 0 0;
 }
